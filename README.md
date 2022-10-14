@@ -24,6 +24,7 @@ partitions](https://wiki.archlinux.org/title/Dm-crypt/Specialties#Modifying_the_
 - Copy the `hooks/encryptmulti` into `/etc/initcpio/hooks/`
 - Copy the `install/encryptmulti` into `/etc/initcpio/install/`
 - Use `encryptmulti` instead of `encrypt` as a hook in the `/etc/mkinitcpio.conf`
+- Regenarate your initramfs with `mkinitcpio -P`
 
 When you add the kernel parameter, you can use multiple devices separating then
 by `%`. Both `cryptdevice` (singular) and `cryptdevices` (plural) will work.
